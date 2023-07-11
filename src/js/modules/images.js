@@ -1,8 +1,8 @@
 const images = () =>{
 
     const imgPopup = document.createElement('div'),
-          workSection = document.querySelector('.works'),
-          bigImage = document.createElement('img');
+            workSection = document.querySelector('.works'),
+            bigImage = document.createElement('img');
     
     imgPopup.classList.add('popup');
     workSection.appendChild(imgPopup);

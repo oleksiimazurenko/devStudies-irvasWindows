@@ -3,10 +3,10 @@ const modals = () => {
     function bindModal(triggerSelector, modalSelector, closeSelector, closeClickOverLay = true){
         
         const trigger = document.querySelectorAll(triggerSelector),
-              modal = document.querySelector(modalSelector),
-              close = document.querySelector(closeSelector),
-              windows = document.querySelectorAll('[data-modal]'),
-              scroll = calcScroll();
+            modal = document.querySelector(modalSelector),
+            close = document.querySelector(closeSelector),
+            windows = document.querySelectorAll('[data-modal]'),
+            scroll = calcScroll();
 
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
@@ -36,7 +36,7 @@ const modals = () => {
 
     function showModalByTime(selector, time){
         setTimeout(() =>{
-            document.querySelector(selector).style.display = 'block';
+            document.querySelectorAll(selector)[1].style.display = 'block';
             document.body.style.overflow = 'hidden';
         }, time);
     }
